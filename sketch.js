@@ -42,12 +42,7 @@ function setup() {
   }
 
 
-  //create particle objects
-if(frameCount%60===0){
-  for(var j = 0;j<=width;j = j+90){
-  particles.push(new Particle(random(width/2-10,width/2+10),10,10))
-  }
-}
+
 
     
 }
@@ -76,5 +71,12 @@ function draw() {
   for(var k = 0; k< particles.length;k++){
     particles[k].display();
   }
+   //create particle objects
+if(frameCount%60===0){
+  for(var j = 0;j<=width;j = j+90){
+  particles.push(new Particle(random(width/2-10,width/2+10),10,10))
+  }
+}
+ 
 
 }
